@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+body {
+    overflow: visible;
+    margin: 0;
+    background-color: #141414;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: url("https://wallpapercave.com/wp/wp4056399.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.topnav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 5%;
+    padding-top: 1.5%;
+    padding-left: 4%;
+    padding-right: 1%;
+    z-index: +1;
+}
+
+.activeItem {
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    text-decoration-line: none;
+    padding: 0.5%;
+    padding-left: 3%;
+    font-size: 14px;
+}
+
+.iconNetflix {
+    margin-bottom: 0.5%;
+}
+
+.navbarItem {
+    background-color: transparent;
+    color: white;
+    text-decoration-line: none;
+    padding: 0.5%;
+    padding-top: 0.2%;
+    font-size: 14px;
+}
+
+.navList {
+    width: 70%;
+}
+
+.navbarItem:hover {
+    -webkit-transition: color 0.4s ease-out;
+    -moz-transition: color 0.4s ease-out;
+    -o-transition: color 0.4s ease-out;
+    -ms-transition: color 0.4s ease-out;
+    transition: color 0.4s ease-out;
+    color: gray;
+}
+
+.navbarIconItem {
+    width: 20%;
+}
+
+.navbarIconArrow {
+    padding-bottom: 5%;
+    padding-left: 0%;
+}
+
+.navbarIcons {
+    padding: 3%;
+}
+
+.oynat {
+    width: 10%;
+    height: 6%;
+    top: 70%;
+    left: 5%;
+    border-radius: 5px;
+    position: relative;
+    border-color: transparent;
+    background-color: white;
+}
+
+.oynat:hover {
+    -webkit-transition: color 0.4s ease-out;
+    -moz-transition: color 0.4s ease-out;
+    -o-transition: color 0.4s ease-out;
+    -ms-transition: color 0.4s ease-out;
+    transition: color 0.4s ease-out;
+    background-color: lightgray;
+}
+
+.oynatLabel {
+    font-size: 100%;
+    position: relative;
+}
+
+.Buttonlar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.Bilgi {
+    width: 15%;
+    height: 6%;
+    top: 70%;
+    left: 6%;
+    border-radius: 5px;
+    position: relative;
+    border-color: transparent;
+    opacity: 0.8;
+    background-color: #564d4d;
+}
+
+.Bilgi:hover {
+    background-color: gray;
+}
+
+.DahaFazla {
+    font-size: 100%;
+    position: relative;
+    color: white;
+}
+
+.container2 {
+    display: flex;
+    margin-top: 50px;
+    position: relative;
+    top: 90%;
+    z-index: -1;
+}
+
+.item {
+    position: relative;
+    display: block;
+    flex: 1 1 0px;
+    transition: transform 500ms;
+}
+
+.container2:focus-within .item,
+.container2:hover .item {
+    transform: translateX(-25%);
+}
+
+.item:focus~.item,
+.item:hover~.item {
+    transform: translateX(25%);
+}
+
+.container2 .item:focus,
+.container2 .item:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.item img {
+    display: block;
+    max-width: 100%;
+}
+
+h2 {
+    top: 95%;
+    left: 5%;
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+.wrapper {
+    top: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    margin: 20px 0;
+}
+
+.wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+}
+
+.wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+}
+
+.wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: #000;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.wrapper2 {
+    top: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.wrapper2 section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    margin: 20px 0;
+}
+
+.wrapper2 section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+}
+
+.wrapper2 section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+}
+
+.wrapper2 section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: #000;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+
+.wrapper2 section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.wrapper2 section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
